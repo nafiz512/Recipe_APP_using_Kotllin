@@ -24,6 +24,7 @@
         android:layout_width="276dp"
         android:layout_height="57dp"
         android:layout_marginTop="28dp"
+        android:fontFamily="@font/yeonsung_regular"
         android:text="Waves Of Food"
         android:textSize="40sp"
         app:layout_constraintBottom_toTopOf="@+id/textView4"
