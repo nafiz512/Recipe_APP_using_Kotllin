@@ -127,7 +127,7 @@
         android:id="@+id/button3"
         android:layout_width="152dp"
         android:layout_height="57dp"
-        android:background="@drawable/greenbuttongradient"
+        android:background="@drawable/greenbutton"
         android:paddingLeft="15dp"
         android:text="Login"
         android:layout_marginTop="16dp"
