@@ -5,12 +5,15 @@
       <SelectionState runConfigName="app">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
+
       <SelectionState runConfigName="ChooseLocationActivity">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
       <SelectionState runConfigName="ChooseLocationActivity (1)">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
+
+
     </selectionStates>
   </component>
 </project>
