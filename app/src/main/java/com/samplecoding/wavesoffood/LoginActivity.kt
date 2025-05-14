@@ -20,8 +20,9 @@ class LoginActivity : AppCompatActivity() {
             startActivity(intent)
         }
         binding.donothavebutton.setOnClickListener {
-            val intent = Intent(this, SignActivity::class.java)
+            val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
     }
 }
+
