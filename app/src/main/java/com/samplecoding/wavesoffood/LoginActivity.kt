@@ -9,12 +9,11 @@ import androidx.core.view.WindowInsetsCompat
 import com.samplecoding.wavesoffood.databinding.ActivityLoginBinding
 
 class LoginActivity : AppCompatActivity() {
-    private val binding: ActivityLoginBinding by lazy{
+    private val binding: ActivityLoginBinding by lazy {
         ActivityLoginBinding.inflate(layoutInflater)
     }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
         setContentView(binding.root)
         binding.loginbutttion.setOnClickListener {
             val intent = Intent(this, SignActivity::class.java)

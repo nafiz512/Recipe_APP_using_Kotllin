@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
@@ -8,17 +8,11 @@
     tools:context=".MainActivity">
 
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:menu="@menu/menu"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
     <TextView
         android:id="@+id/textView9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
         android:layout_marginStart="16dp"
         android:layout_marginTop="32dp"
         android:text="Explore Your Favourite Food"
@@ -30,7 +24,14 @@
         android:id="@+id/imageView4"
         android:layout_width="32dp"
         android:layout_height="32dp"
-        android:layout_marginEnd="16dp"
+        android:layout_alignBottom="@+id/textView9"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="5dp"
+        android:layout_toEndOf="@+id/textView9"
         app:layout_constraintBottom_toBottomOf="@+id/textView9"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/textView9"
@@ -38,8 +39,68 @@
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/fragmentContainer"
-        android:layout_width="569dp"
-        android:layout_height="909dp"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="65dp" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:layout_width="match_parent"
+        android:layout_height="758dp"
+        android:layout_above="@+id/srachfragmentbutton"
+        android:layout_below="@+id/textView9"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="11dp" />
+
+    <Button
+        android:id="@+id/homefragmentbutton"
+        android:layout_width="66dp"
+        android:layout_height="61dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="6dp"
+        android:backgroundTint="@color/white"
+        android:drawableBottom="@drawable/home_02"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/cartfragmentbutton"
+        android:layout_width="90dp"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="75dp"
+        android:layout_marginBottom="4dp"
+        android:backgroundTint="@color/white"
+        android:drawableBottom="@drawable/notification_cart" />
+
+    <Button
+        android:id="@+id/srachfragmentbutton"
+        android:layout_width="73dp"
+        android:layout_height="56dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="166dp"
+        android:layout_marginBottom="9dp"
+        android:backgroundTint="@color/white"
+        android:drawableBottom="@drawable/icon_search" />
+
+    <Button
+        android:id="@+id/historyfragmentbutton"
+        android:layout_width="69dp"
+        android:layout_height="57dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="243dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="@color/white"
+        android:drawableBottom="@drawable/list" />
+
+    <Button
+        android:id="@+id/profilefragmentbutton"
+        android:layout_width="73dp"
+        android:layout_height="52dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="312dp"
+        android:layout_marginBottom="4dp"
+        android:backgroundTint="@color/white"
+        android:drawableBottom="@drawable/user_02" />
+</RelativeLayout>
