@@ -11,6 +11,8 @@ import com.denzcoskun.imageslider.interfaces.ItemClickListener
 import com.denzcoskun.imageslider.models.SlideModel
 import com.samplecoding.wavesoffood.R
 import com.samplecoding.wavesoffood.databinding.FragmentHomeBinding
+import com.samplecoding.wavesoffood.adaptar.PopularAdaptar
+import androidx.recyclerview.widget.LinearLayoutManager
 
 class HomeFragment : Fragment(R.layout.fragment_home) {
     private lateinit var binding: FragmentHomeBinding
@@ -53,6 +55,12 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
                 Toast.makeText(requireContext(), itemMessage, Toast.LENGTH_SHORT).show()
             }
         })
+        val foodName= listOf("Burger","sandwich","momo","pizza")
+        val Price= listOf("$5","$6","$8","$9")
+        val PopulerFoodImages= listOf(R.drawable.m1,R.drawable.m2,R.drawable.m3,R.drawable.m4)
+        val adapter=PopularAdaptar(foodName,Price,PopulerFoodImages)
+        binding.populerRecyclerView.layoutManager=LinearLayoutManager(requireContext())
+        binding.populerRecyclerView.adapter=adapter
     }
 
     companion object {
